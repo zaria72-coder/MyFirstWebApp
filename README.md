@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Power BI Bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        
+</head>
+<body>
+    <div class ="container fluid p-5 bg-primary text-white text-center">
+    <h1>My first Power BI Bootstrap page</h1>
+    <img src = "image_PowerBI.png" class =img-thumbnail width = 80 height = 50 alt = "Microsoft Power BI">
+    <p> Welcome to my webpage</p>
+     
+    </div>
+    <div class ="container mt-5">
+    <div class ="row">
+        <div class ="col-sm-4.5">
+            <h3> About Power BI</h3>
+              <img src = "dashboard_image.png" class ="img-thumbnail" alt = "Power BI information illustrated" width ="1000" height ="150">
+            <p></p> Power BI is a business intelligence platform, which can provide organisations to turn data into reports, supporting data driven decisions. It interests me because I enjoy developing visualisations and dashboard to support my organisation in making effective data driven decisions. <a href = "https://www.microsoft.com/en-gb/power-platform/products/power-bi"> Click here to learn more about Power BI.</a></p>
+          
+        </div>
+
+        <div class = "col-sm-4.5">
+
+            <h3>Benefits of Power BI</h3>
+            <ol class = "list-group">
+                <li class = "list-group-item">Provides organisations with a report comprising data driven insights, enhancing performance</li>
+                <li class = "list-group-item"> Incorporates with other tools such as Excel, SQL, Azure, Microsoft Fabric and Sharepoint</li>
+                <li class = "list-group-item"> Enhances data security and governance with its role-based access control and row-level security</li>
+            <ol>
+        </div>
+ 
+    
+    <div class ="col-sm-4.5">
+        
+        <h3>Open Library Data</h3>
+        <p>Example of Open Library data</p>
+<script>
+async function loaddata() {
+    let response = await fetch("https://openlibrary.org/search.json?q=powerbi");
+
+    const data = await response.json();
+    let len = data.docs.length;
+
+    let text ="";
+    for (let i = 0; i<len; i++) {
+        text+= data.docs[i].title + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+
+}
+loaddata();
+
+
+</script>
+
+<p id ="demo"></p>
+
+        
+            
+</form>
+
+
+        <form action "#" method="post"></form>
+    </form>
+    </div>
+
+
+
+   <div class = "usage">
+    <h3>Contact form</h3>
+
+<label for ="fname" >First Name:</label><br>
+    <input type = "text" id="fname" name="fname"required> <br>
+    <label for ="lname"> Last Name: </label><br>
+    <input type = "text" id="lname" name="lname"required> <br>
+    <label for ="emailaddress">Email:</label> <br>
+    <input type = "email" id="emailaddress" name="email" required> <br>
+    <label for ="message"> Message:</label><br>
+    <textarea name="message" id="message" style="width:90%; height:35%;padding:10px; margin: bottom 10px;"></textarea>
+    <br>
+    
+   
+
+
+<button onclick="window.alert('Are you sure you want to leave the page');">
+Alert
+</button>
+
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML ="Provides insights and helps businesses in making data driven decisions";
+    }
+</script>
+
+<button type ="button" onclick ="myFunction ()"> 
+    Click
+</button>
+
+<script src ="myScript.js"></script>
+
+<input type ="submit">
+</body>
+</html>
+
+<button type = "button" onclick ="document.getElementById('stock').innerHTML = Date()">
+Show Date
+</button>
+
+
+
+</form>
+
+</div>
+</body>
+</html>
+
+     
